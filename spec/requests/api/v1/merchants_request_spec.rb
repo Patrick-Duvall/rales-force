@@ -9,7 +9,7 @@ describe "Merchants API" do
 
      items = JSON.parse(response.body)
 
-     expect(items.count).to eq(3)
+     expect(items['data'].count).to eq(3)
   end
 
   it "can get one item by id" do
@@ -17,6 +17,7 @@ describe "Merchants API" do
    get "/api/v1/merchants/#{id}"
    merchant= JSON.parse(response.body)
    expect(response).to be_successful
-   expect(merchant["id"]).to eq(id)
+   require "pry"; binding.pry
+   expect(merchant['data']["id"]).to eq(id)
  end
 end
