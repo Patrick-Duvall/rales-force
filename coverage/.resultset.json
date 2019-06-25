@@ -300,7 +300,7 @@
       "/Users/patrickduvall/turing/3module/projects/rails_engine/spec/factories/merchants.rb": [
         1,
         1,
-        4,
+        5,
         null,
         null
       ],
@@ -427,10 +427,22 @@
         null,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/patrickduvall/turing/3module/projects/rails_engine/app/controllers/api/v1/merchants_controller.rb": [
         1,
+        null,
+        1,
+        1,
+        null,
         null,
         1,
         1,
@@ -443,6 +455,6 @@
         null
       ]
     },
-    "timestamp": 1561472713
+    "timestamp": 1561473342
   }
 }
