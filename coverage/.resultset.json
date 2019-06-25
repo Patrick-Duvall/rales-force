@@ -321,6 +321,8 @@
       ],
       "/Users/patrickduvall/turing/3module/projects/rails_engine/app/models/customer.rb": [
         1,
+        1,
+        1,
         null
       ],
       "/Users/patrickduvall/turing/3module/projects/rails_engine/app/models/application_record.rb": [
@@ -357,6 +359,9 @@
         1,
         1,
         1,
+        1,
+        1,
+        1,
         null
       ],
       "/Users/patrickduvall/turing/3module/projects/rails_engine/spec/models/item_spec.rb": [
@@ -369,6 +374,8 @@
         null
       ],
       "/Users/patrickduvall/turing/3module/projects/rails_engine/app/models/item.rb": [
+        1,
+        1,
         1,
         1,
         null
@@ -384,6 +391,9 @@
       ],
       "/Users/patrickduvall/turing/3module/projects/rails_engine/app/models/merchant.rb": [
         1,
+        1,
+        1,
+        1,
         null
       ],
       "/Users/patrickduvall/turing/3module/projects/rails_engine/spec/models/transaction_spec.rb": [
@@ -396,10 +406,9 @@
       "/Users/patrickduvall/turing/3module/projects/rails_engine/app/models/transaction.rb": [
         1,
         1,
-        null,
         null
       ]
     },
-    "timestamp": 1561470543
+    "timestamp": 1561471144
   }
 }
