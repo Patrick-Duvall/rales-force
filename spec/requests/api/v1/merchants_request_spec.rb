@@ -17,7 +17,6 @@ describe "Merchants API" do
    get "/api/v1/merchants/#{id}"
    merchant= JSON.parse(response.body)
    expect(response).to be_successful
-   require "pry"; binding.pry
-   expect(merchant['data']["id"]).to eq(id)
+   expect(merchant['data']["id"].to_i).to eq(id)
  end
 end
