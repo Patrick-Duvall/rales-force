@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-06-26T14:45:44-06:00">2019-06-26T14:45:44-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-06-26T15:51:07-06:00">2019-06-26T15:51:07-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -143,7 +143,7 @@
       <tr>
         <td class="strong"><a href="#a1142d958b13793acc7f01403d9bda56de32f832" class="src_link" title="app/models/merchant.rb">app/models/merchant.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>13</td>
+        <td>20</td>
         <td>7</td>
         <td>7</td>
         <td>0</td>
@@ -1178,34 +1178,76 @@
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">    customers.select(&quot;COUNT(invoices.id) as invoice_count, customers.*&quot;)</code>
+          <code class="ruby">    # customers.distinct</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby">    .joins(invoices: [:merchant, :transactions])</code>
+          <code class="ruby">    # .select(&quot;COUNT(invoices.id) as invoice_count, customers.*&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby">    .where(transactions: {result: &quot;success&quot;}, merchants: {id: self.id})</code>
+          <code class="ruby">    # .joins(invoices: [:merchant, :transactions])</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="11">
-          <span class="hits">4</span>
+        <li class="never" data-hits="" data-linenumber="11">
           
-          <code class="ruby">    .group(:id).first</code>
+          
+          <code class="ruby">    # .where(transactions: {result: &quot;success&quot;}, merchants: {id: self.id})</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    # .group(:id).first</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">    customers.select(&quot;COUNT(invoices.id) as invoice_count, customers.*&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">    .joins(:transactions)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">    .where(transactions: {result: &quot;success&quot;})</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">    .group(&#39;customers.id&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">    .order(:invoice_count)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="18">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    .last</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">end</code>
