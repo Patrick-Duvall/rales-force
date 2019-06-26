@@ -25,13 +25,11 @@ describe "Merchants favorite customer" do
     get "/api/v1/merchants/#{id1}/favorite_customer"
     customer = JSON.parse(response.body)
     expect(response).to (be_successful)
-
     expect(customer["data"]['attributes']['first_name']).to eq(c1.first_name)
 
     get "/api/v1/merchants/#{id2}/favorite_customer"
     customer = JSON.parse(response.body)
     expect(response).to (be_successful)
-
     expect(customer["data"]['attributes']['first_name']).to eq(c4.first_name)
 
   end

@@ -8,6 +8,6 @@ class Merchant < ApplicationRecord
     customers.select("COUNT(invoices.id) as invoice_count, customers.*")
     .joins(invoices: [:merchant, :transactions])
     .where(transactions: {result: "success"}, merchants: {id: self.id})
-    .group(:id)[0]
+    .group(:id).first
   end
 end
