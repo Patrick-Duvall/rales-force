@@ -323,6 +323,7 @@
         1,
         1,
         1,
+        1,
         null,
         1,
         null,
@@ -438,7 +439,7 @@
         1,
         null,
         1,
-        0,
+        1,
         0,
         0,
         null,
@@ -592,6 +593,17 @@
         null,
         null
       ],
+      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/controllers/api/v1/merchants/favorite_customer_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
       "/Users/patrickduvall/turing/3module/projects/rails_engine/app/controllers/api/v1/merchants/search_controller.rb": [
         1,
         1,
@@ -625,10 +637,6 @@
         null,
         null
       ],
-      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/controllers/application_controller.rb": [
-        1,
-        null
-      ],
       "/Users/patrickduvall/turing/3module/projects/rails_engine/app/serializers/merchant_serializer.rb": [
         1,
         1,
@@ -649,6 +657,6 @@
         null
       ]
     },
-    "timestamp": 1561558815
+    "timestamp": 1561559337
   }
 }
