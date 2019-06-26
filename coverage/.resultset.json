@@ -308,8 +308,8 @@
         1,
         1,
         1,
-        11,
-        11,
+        16,
+        16,
         1,
         null,
         null
@@ -334,6 +334,10 @@
         1,
         1,
         1,
+        1,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/patrickduvall/turing/3module/projects/rails_engine/app/models/application_record.rb": [
@@ -422,7 +426,7 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
         null
       ],
@@ -431,9 +435,13 @@
         1,
         1,
         1,
+        1,
         null,
         1,
-        1,
+        null,
+        null,
+        null,
+        4,
         null,
         null
       ],
@@ -467,16 +475,24 @@
         null,
         1,
         1,
+        1,
+        1,
+        1,
         null,
         1,
-        0,
-        0,
-        0,
+        1,
         null,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
         null,
         null,
         null
@@ -624,12 +640,21 @@
         null
       ],
       "/Users/patrickduvall/turing/3module/projects/rails_engine/app/controllers/api/v1/merchants/favorite_customer_controller.rb": [
+        1,
+        1,
+        2,
+        2,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        null
+      ],
+      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/serializers/customer_serializer.rb": [
+        1,
+        1,
+        1,
         null
       ],
       "/Users/patrickduvall/turing/3module/projects/rails_engine/app/controllers/api/v1/merchants/search_controller.rb": [
@@ -665,10 +690,6 @@
         null,
         null
       ],
-      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/controllers/application_controller.rb": [
-        1,
-        null
-      ],
       "/Users/patrickduvall/turing/3module/projects/rails_engine/app/serializers/merchant_serializer.rb": [
         1,
         1,
@@ -689,6 +710,6 @@
         null
       ]
     },
-    "timestamp": 1561560494
+    "timestamp": 1561581117
   }
 }
