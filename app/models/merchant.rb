@@ -12,6 +12,15 @@ class Merchant < ApplicationRecord
     .limit(limit)
   end
 
+  def self.most_items(limit)
+    joins(invoices: [:invoice_items, :transactions])
+    .select("merchants.*,SUM(invoice_items.quantity) AS sold")
+    .merge(Transaction.successful)
+    .group(:id)
+    .order(sold: :desc)
+    .limit(limit)
+  end
+
   def favorite_customer
     #customers does not return distinct
     customers.select("COUNT(invoices.id) as invoice_count, customers.*")
