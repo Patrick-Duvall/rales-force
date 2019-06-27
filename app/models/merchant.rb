@@ -31,4 +31,11 @@ class Merchant < ApplicationRecord
     .last
   end
 
+  def total_revenue
+    invoices.select("SUM(invoice_items.quantity * invoice_items.unit_price) AS total_revenue")
+    .joins(:transactions, :invoice_items)
+    .merge(Transaction.successful)
+    .group('invoices.merchant_id')[0]
+  end
+
 end
