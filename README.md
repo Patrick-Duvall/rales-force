@@ -20,6 +20,4 @@ NOTE: Failed charges should never be counted in revenue totals or statistics.
 NOTE: All revenues should be reported as a float with two decimal places.
 
 Items
-GET /api/v1/items/most_revenue?quantity=x returns the top x items ranked by total revenue generated
-GET /api/v1/items/most_items?quantity=x returns the top x item instances ranked by total number sold
 GET /api/v1/items/:id/best_day returns the date with the most sales for the given item using the invoice date. If there are multiple days with equal number of sales, return the most recent day.
