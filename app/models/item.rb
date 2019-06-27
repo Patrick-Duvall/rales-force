@@ -12,6 +12,15 @@ class Item < ApplicationRecord
     .limit(limit)
   end
 
+  def self.most_sold(limit)
+    joins(invoices: :transactions)
+    .select("items.*,SUM(invoice_items.quantity) AS sold")
+    .merge(Transaction.successful)
+    .group(:id)
+    .order(sold: :desc)
+    .limit(limit)
+  end
+
   # Item.select("items.*, SUM(invoice_items.unit_price * invoice_items.quantity) AS revenue").joins(invoices: :transactions).group(:id).merge(Transaction.successful).order(revenue: :desc).limit(1)
 end
 # .merge(Transaction.successful)
