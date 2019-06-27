@@ -6,7 +6,6 @@ describe "Merchants most revenue for x merchants API" do
     get '/api/v1/merchants/most_revenue?quantity=5'
     merchant = JSON.parse(response.body)
     expect(response).to be_successful
-    require "pry"; binding.pry
     expect(response["data"]).count.to eq(5)
   end
 
