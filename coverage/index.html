@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-06-27T15:55:36-06:00">2019-06-27T15:55:36-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-06-28T10:14:49-06:00">2019-06-28T10:14:49-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">96.76%</span></span>
+    (<span class="covered_percent"><span class="green">93.11%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.59
+         1.64
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>56</b> files in total.
-    <b>587</b> relevant lines. 
-    <span class="green"><b>568</b> lines covered</span> and
-    <span class="red"><b>19</b> lines missed </span>
+    <b>61</b> files in total.
+    <b>711</b> relevant lines. 
+    <span class="green"><b>662</b> lines covered</span> and
+    <span class="red"><b>49</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -62,6 +62,26 @@
       
       <tr>
         <td class="strong"><a href="#52f3b4b4b7e767c2a26375da256e39c15ede3ee5" class="src_link" title="app/controllers/api/v1/customers_controller.rb">app/controllers/api/v1/customers_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>11</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#e3f341cd2f43575503752a374a5004176226af00" class="src_link" title="app/controllers/api/v1/items/search_controller.rb">app/controllers/api/v1/items/search_controller.rb</a></td>
+        <td class="red strong">76.92 %</td>
+        <td>30</td>
+        <td>13</td>
+        <td>10</td>
+        <td>3</td>
+        <td>6.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#1c232a0b104dbc2758c3c52abe48c56ea20547c4" class="src_link" title="app/controllers/api/v1/items_controller.rb">app/controllers/api/v1/items_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>11</td>
         <td>5</td>
@@ -211,6 +231,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#82e0b7121f62ce97d02485bd01298bbf1a593d90" class="src_link" title="app/serializers/item_serializer.rb">app/serializers/item_serializer.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>7</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>3.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#a50f996f38ab0b41d571f2505960ae65499e7df7" class="src_link" title="app/serializers/merchant_serializer.rb">app/serializers/merchant_serializer.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
@@ -343,9 +373,9 @@
       <tr>
         <td class="strong"><a href="#c46c7b2c4f44fcf6f9801dfec2ecf84be5d59077" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>39</td>
-        <td>26</td>
-        <td>26</td>
+        <td>43</td>
+        <td>30</td>
+        <td>30</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -387,7 +417,7 @@
         <td>6</td>
         <td>6</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>7.5</td>
       </tr>
       
       <tr>
@@ -397,7 +427,7 @@
         <td>3</td>
         <td>3</td>
         <td>0</td>
-        <td>10.7</td>
+        <td>13.7</td>
       </tr>
       
       <tr>
@@ -526,6 +556,26 @@
         <td>9</td>
         <td>3</td>
         <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#9caf5632206d05141db2e9992e9624b45b035f71" class="src_link" title="spec/requests/api/v1/items/search_spec.rb">spec/requests/api/v1/items/search_spec.rb</a></td>
+        <td class="red strong">66.67 %</td>
+        <td>117</td>
+        <td>81</td>
+        <td>54</td>
+        <td>27</td>
+        <td>0.8</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#ea662d69c84acd9f4dd998cd21db9e3f39543fad" class="src_link" title="spec/requests/api/v1/items_request_spec.rb">spec/requests/api/v1/items_request_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>24</td>
+        <td>16</td>
+        <td>16</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -837,6 +887,290 @@
           <span class="hits">1</span>
           
           <code class="ruby">    render json: CustomerSerializer.new(Customer.find(params[&#39;id&#39;]))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="e3f341cd2f43575503752a374a5004176226af00">
+  <div class="header">
+    <h3>app/controllers/api/v1/items/search_controller.rb</h3>
+    <h4><span class="red">76.92 %</span> covered</h4>
+    <div>
+      <b>13</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Api::V1::Items::SearchController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="3">
+          <span class="hits">7</span>
+          
+          <code class="ruby">    if search_params &amp;&amp; search_params != {}</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="4">
+          <span class="hits">7</span>
+          
+          <code class="ruby">      render json: ItemSerializer.new(Item.find_by(search_params))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">      random = Item.pluck(:id).sample</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">      render json: ItemSerializer.new(Item.find(random))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">    render json: ItemSerializer.new(Item.where(search_params).order(:id))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def search_params</code>
+        </li>
+      
+        <li class="covered" data-hits="21" data-linenumber="19">
+          <span class="hits">21</span>
+          
+          <code class="ruby">    terms = params.permit(:id, :created_at, :updated_at, :name, :description, :merchant_id, :unit_price)</code>
+        </li>
+      
+        <li class="covered" data-hits="21" data-linenumber="20">
+          <span class="hits">21</span>
+          
+          <code class="ruby">    terms[&#39;unit_price&#39;] = terms[&#39;unit_price&#39;].gsub(&quot;.&quot;, &#39;&#39;) if terms[&#39;unit_price&#39;]</code>
+        </li>
+      
+        <li class="covered" data-hits="21" data-linenumber="21">
+          <span class="hits">21</span>
+          
+          <code class="ruby">    terms</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  # def search_params</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  #   new_params = params</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  #   new_params[:unit_price] = new_params[:unit_price].gsub(&quot;.&quot;, &#39;&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  #   new_params</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="1c232a0b104dbc2758c3c52abe48c56ea20547c4">
+  <div class="header">
+    <h3>app/controllers/api/v1/items_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Api::V1::ItemsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    render json: ItemSerializer.new(Item.all)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    render json: ItemSerializer.new(Item.find(params[&#39;id&#39;]))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
@@ -2244,6 +2578,67 @@
 </div>
 
       
+        <div class="source_table" id="82e0b7121f62ce97d02485bd01298bbf1a593d90">
+  <div class="header">
+    <h3>app/serializers/item_serializer.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ItemSerializer</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  include FastJsonapi::ObjectSerializer</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attributes :id, :name, :description, :merchant_id</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attribute :unit_price do |object|</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="5">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    object.unit_price.fdiv(100).to_s</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="a50f996f38ab0b41d571f2505960ae65499e7df7">
   <div class="header">
     <h3>app/serializers/merchant_serializer.rb</h3>
@@ -3510,8 +3905,8 @@
     <h3>config/routes.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>26</b> relevant lines. 
-      <span class="green"><b>26</b> lines covered</span> and
+      <b>30</b> relevant lines. 
+      <span class="green"><b>30</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -3666,88 +4061,112 @@
         <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
-          <code class="ruby">       get &#39;/most_revenue&#39;, to: &#39;most_revenue#index&#39;</code>
+          <code class="ruby">       get &#39;/find&#39;, to: &#39;search#show&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
-          <code class="ruby">       get &#39;/most_items&#39;, to: &#39;most_items#index&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby">     end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="28">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="29">
-          <span class="hits">1</span>
-          
-          <code class="ruby">     namespace :customers do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="30">
-          <span class="hits">1</span>
-          
-          <code class="ruby">       get &#39;/:id/favorite_merchant&#39;, to: &#39;favorite_merchant#show&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="31">
-          <span class="hits">1</span>
-          
-          <code class="ruby">       get &#39;/find&#39;, to: &#39;search#show&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="32">
-          <span class="hits">1</span>
-          
           <code class="ruby">       get &#39;/random&#39;, to: &#39;search#show&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="33">
+        <li class="covered" data-hits="1" data-linenumber="27">
           <span class="hits">1</span>
           
           <code class="ruby">       get &#39;/find_all&#39;, to: &#39;search#index&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       get &#39;/most_revenue&#39;, to: &#39;most_revenue#index&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       get &#39;/most_items&#39;, to: &#39;most_items#index&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">     end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="35">
+        <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
-          <code class="ruby">     resources :customers, only: [:index, :show]</code>
+          <code class="ruby">     resources :items, only: [:index, :show]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
           
+          <code class="ruby">     namespace :customers do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
           
-          <code class="ruby">   end</code>
+          <code class="ruby">       get &#39;/:id/favorite_merchant&#39;, to: &#39;favorite_merchant#show&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       get &#39;/find&#39;, to: &#39;search#show&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       get &#39;/random&#39;, to: &#39;search#show&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       get &#39;/find_all&#39;, to: &#39;search#index&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="38">
           
           
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     resources :customers, only: [:index, :show]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
           <code class="ruby"> end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="39">
+        <li class="never" data-hits="" data-linenumber="43">
           
           
           <code class="ruby">end</code>
@@ -3967,20 +4386,20 @@
           <code class="ruby">  factory :item do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="14" data-linenumber="3">
+          <span class="hits">14</span>
           
           <code class="ruby">    name { &quot;MyString&quot; }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="14" data-linenumber="4">
+          <span class="hits">14</span>
           
           <code class="ruby">    description { &quot;MyString&quot; }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="14" data-linenumber="5">
+          <span class="hits">14</span>
           
           <code class="ruby">    unit_price { &quot;MyString&quot; }</code>
         </li>
@@ -4034,8 +4453,8 @@
           <code class="ruby">  factory :merchant do</code>
         </li>
       
-        <li class="covered" data-hits="30" data-linenumber="3">
-          <span class="hits">30</span>
+        <li class="covered" data-hits="39" data-linenumber="3">
+          <span class="hits">39</span>
           
           <code class="ruby">    sequence(:name) {|n| &quot;Merchant #{n}&quot; }</code>
         </li>
@@ -6058,6 +6477,890 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="9caf5632206d05141db2e9992e9624b45b035f71">
+  <div class="header">
+    <h3>spec/requests/api/v1/items/search_spec.rb</h3>
+    <h4><span class="red">66.67 %</span> covered</h4>
+    <div>
+      <b>81</b> relevant lines. 
+      <span class="green"><b>54</b> lines covered</span> and
+      <span class="red"><b>27</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;rails_helper&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;Items search API&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before :each do</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="5">
+          <span class="hits">7</span>
+          
+          <code class="ruby">    @m1 = create(:merchant)</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="6">
+          <span class="hits">7</span>
+          
+          <code class="ruby">    @i1 = create(:item, merchant_id: @m1.id)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;can find one entry by ID&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    id = @i1.id</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    get &quot;/api/v1/items/find?id=#{id}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    item = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(response).to be_successful</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(item[&#39;data&#39;][&quot;id&quot;].to_i).to eq(id)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;can find one entry by name&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    name = @i1.name</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    get &quot;/api/v1/items/find?name=#{name}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    item = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(response).to be_successful</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(item[&#39;data&#39;][&#39;attributes&#39;][&quot;name&quot;]).to eq(name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;can find one entry by description&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    description = @i1.description</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    get &quot;/api/v1/items/find?description=#{description}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    item = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(response).to be_successful</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(item[&#39;data&#39;][&#39;attributes&#39;][&quot;description&quot;]).to eq(description)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;can find one entry by unit price&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    unit_price = @i1.unit_price</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    get &quot;/api/v1/items/find?unit_price=#{unit_price}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    item = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(response).to be_successful</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(item[&#39;data&#39;][&#39;attributes&#39;][&quot;unit_price&quot;]).to eq(unit_price)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;can find one entry by merchant id&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    merchant_id = @i1.merchant_id</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    get &quot;/api/v1/items/find?merchant_id=#{merchant_id}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    item = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(response).to be_successful</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(item[&#39;data&#39;][&#39;attributes&#39;][&quot;merchant_id&quot;]).to eq(merchant_id)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;can find one entry by created at&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    item = create(:item, created_at: &quot;2012-03-27T14:54:02.000Z&quot;, merchant_id: @m1.id, id: 33)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="49">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    created_at = item.created_at</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    get &quot;/api/v1/items/find?created_at=#{created_at}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    item = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="52">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(response).to be_successful</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(item[&#39;data&#39;][&#39;id&#39;]).to eq(&#39;33&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;can find one entry by updated at&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    item = create(:item, updated_at: &quot;2012-03-27T14:54:02.000Z&quot;, id: 33, merchant_id: @m1.id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    updated_at = item.updated_at</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    get &quot;/api/v1/items/find?updated_at=#{updated_at}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="60">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    item = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(response).to be_successful</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(item[&#39;data&#39;][&#39;id&#39;]).to eq(&#39;33&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  xit &quot;can find multiple entries by ID&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="66">
+          
+          
+          <code class="ruby">    id = create(:item).id</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="67">
+          
+          
+          <code class="ruby">    get &quot;/api/v1/items/find_all?id=#{id}&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="68">
+          
+          
+          <code class="ruby">    item = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="69">
+          
+          
+          <code class="ruby">    expect(response).to be_successful</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="70">
+          
+          
+          <code class="ruby">    expect(item[&#39;data&#39;][0][&quot;id&quot;].to_i).to eq(id)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="72">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="73">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  xit &quot;can find multiple entries by name&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="74">
+          
+          
+          <code class="ruby">    name = create(:item).name</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="75">
+          
+          
+          <code class="ruby">    get &quot;/api/v1/items/find_all?name=#{name}&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="76">
+          
+          
+          <code class="ruby">    item = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="77">
+          
+          
+          <code class="ruby">    expect(response).to be_successful</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="78">
+          
+          
+          <code class="ruby">    expect(item[&#39;data&#39;][0][&#39;attributes&#39;][&quot;name&quot;]).to eq(name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="81">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  xit &quot;can find multiple entries by name&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="82">
+          
+          
+          <code class="ruby">    item = Merchant.create!(  {</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
+          <code class="ruby">      &quot;id&quot;         =&gt; 22,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="84">
+          
+          
+          <code class="ruby">      &quot;name&quot;       =&gt; &quot;Quitzon and Sons&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby">      &quot;created_at&quot; =&gt; &quot;2012-03-27T14:54:02.000Z&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="86">
+          
+          
+          <code class="ruby">      &quot;updated_at&quot; =&gt; &quot;2012-03-27T14:54:02.000Z&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="87">
+          
+          
+          <code class="ruby">    })</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="88">
+          
+          
+          <code class="ruby">    created_at = item.created_at</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="89">
+          
+          
+          <code class="ruby">    get &quot;/api/v1/items/find_all?created_at=#{created_at}&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="90">
+          
+          
+          <code class="ruby">    item = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="91">
+          
+          
+          <code class="ruby">    expect(response).to be_successful</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="92">
+          
+          
+          <code class="ruby">    expect(item[&#39;data&#39;][0][&#39;id&#39;]).to eq(&#39;22&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="93">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="95">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  xit &quot;can find multiple entries by name&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="96">
+          
+          
+          <code class="ruby">    item = Merchant.create!(  {</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="97">
+          
+          
+          <code class="ruby">      &quot;id&quot;         =&gt; 24,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="98">
+          
+          
+          <code class="ruby">      &quot;name&quot;       =&gt; &quot;Quitzon and Sons&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="99">
+          
+          
+          <code class="ruby">      &quot;created_at&quot; =&gt; &quot;2012-03-27T14:54:02.000Z&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="100">
+          
+          
+          <code class="ruby">      &quot;updated_at&quot; =&gt; &quot;2012-03-27T14:54:02.000Z&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="101">
+          
+          
+          <code class="ruby">    })</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="102">
+          
+          
+          <code class="ruby">    updated_at = item.updated_at</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="103">
+          
+          
+          <code class="ruby">    get &quot;/api/v1/items/find_all?updated_at=#{updated_at}&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="104">
+          
+          
+          <code class="ruby">    item = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="105">
+          
+          
+          <code class="ruby">    expect(response).to be_successful</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="106">
+          
+          
+          <code class="ruby">    expect(item[&#39;data&#39;][0][&#39;id&#39;]).to eq(&#39;24&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="107">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="108">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="109">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  xit &quot;can provide a random entry&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="110">
+          
+          
+          <code class="ruby">    items = create_list(:item, 5)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="111">
+          
+          
+          <code class="ruby">    get &quot;/api/v1/items/random&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="112">
+          
+          
+          <code class="ruby">    item = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="113">
+          
+          
+          <code class="ruby">    expect(response).to be_successful</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="114">
+          
+          
+          <code class="ruby">    expect(items.map(&amp;:id)).to include(merchant[&quot;data&quot;][&quot;id&quot;].to_i)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="115">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="116">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="117">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="ea662d69c84acd9f4dd998cd21db9e3f39543fad">
+  <div class="header">
+    <h3>spec/requests/api/v1/items_request_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>16</b> relevant lines. 
+      <span class="green"><b>16</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;Items API&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;sends a list of items&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    m1 = create(:merchant)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    create_list(:item, 3, merchant_id: m1.id)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    get &#39;/api/v1/items&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(response).to be_successful</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     items = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     expect(items[&#39;data&#39;].count).to eq(3)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;can get one item by id&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  m1 = create(:merchant)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   id = create(:item, merchant_id: m1.id).id</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   get &quot;/api/v1/items/#{id}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   item = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   expect(response).to be_successful</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   expect(item[&#39;data&#39;][&quot;id&quot;].to_i).to eq(id)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"> end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby">end</code>
