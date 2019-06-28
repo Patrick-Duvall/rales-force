@@ -33,6 +33,7 @@ Rails.application.routes.draw do
        get '/find_all', to: 'search#index'
        get '/most_revenue', to: 'most_revenue#index'
        get '/most_items', to: 'most_items#index'
+       get'/:id/best_day', to: 'best_day#show'
      end
      resources :items, only: [:index, :show]
 
