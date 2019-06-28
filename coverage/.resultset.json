@@ -263,8 +263,8 @@
       "/Users/patrickduvall/turing/3module/projects/rails_engine/spec/factories/customers.rb": [
         1,
         1,
-        39,
-        39,
+        41,
+        41,
         null,
         null
       ],
@@ -281,7 +281,7 @@
       "/Users/patrickduvall/turing/3module/projects/rails_engine/spec/factories/invoices.rb": [
         1,
         1,
-        27,
+        31,
         1,
         1,
         null,
@@ -300,7 +300,7 @@
       "/Users/patrickduvall/turing/3module/projects/rails_engine/spec/factories/merchants.rb": [
         1,
         1,
-        39,
+        41,
         null,
         null
       ],
@@ -334,6 +334,8 @@
         1,
         1,
         1,
+        1,
+        null,
         1,
         null,
         1,
@@ -673,6 +675,33 @@
         1,
         null,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/patrickduvall/turing/3module/projects/rails_engine/spec/requests/api/v1/invoices_request_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
         1,
         1,
         1,
@@ -1243,6 +1272,25 @@
         null,
         null
       ],
+      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/controllers/api/v1/invoices_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/serializers/invoice_serializer.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/patrickduvall/turing/3module/projects/rails_engine/app/controllers/api/v1/items/search_controller.rb": [
         1,
         1,
@@ -1403,6 +1451,6 @@
         null
       ]
     },
-    "timestamp": 1561738489
+    "timestamp": 1561739181
   }
 }
