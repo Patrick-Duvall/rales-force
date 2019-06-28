@@ -111,7 +111,6 @@ describe "Transactions search API" do
     invoices = create_list(:invoice, 5, customer_id: @c1.id, merchant_id: @m1.id) << @i1
     get "/api/v1/invoices/random"
     invoice = JSON.parse(response.body)
-    require "pry"; binding.pry
     expect(response).to be_successful
     expect(invoices.map(&:id)).to include(invoice["data"]["id"].to_i)
   end
