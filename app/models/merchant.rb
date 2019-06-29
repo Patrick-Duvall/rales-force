@@ -21,6 +21,10 @@ class Merchant < ApplicationRecord
     .limit(limit)
   end
 
+  def customers_with_pending_invoices
+    customers.merge(Invoice.without_successful_transaction)
+  end
+
   def favorite_customer
     #customers does not return distinct
     customers.select("COUNT(invoices.id) as invoice_count, customers.*")

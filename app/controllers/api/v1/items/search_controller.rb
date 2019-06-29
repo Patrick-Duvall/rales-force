@@ -22,11 +22,4 @@ class Api::V1::Items::SearchController < ApplicationController
     terms['unit_price'] = terms['unit_price'].gsub(".", '') if terms['unit_price']
     terms
   end
-
-  # def search_params
-  #   new_params = params
-  #   new_params[:unit_price] = new_params[:unit_price].gsub(".", '')
-  #   new_params
-  # end
-
 end
