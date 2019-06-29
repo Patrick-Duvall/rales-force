@@ -18,12 +18,17 @@ Rails.application.routes.draw do
        get '/find_all', to: 'search#index'
        get '/:id/revenue', to: "revenue#show"
        get '/:id/favorite_customer', to: 'favorite_customer#show'
+       get '/:id/items', to: 'items#index'
+       get '/:id/invoices', to: 'invoices#index'
      end
      resources :merchants, only: [:index, :show]
+
      namespace :invoices do
        get '/find', to: 'search#show'
        get '/random', to: 'search#show'
        get '/find_all', to: 'search#index'
+       get '/:id/transactions', to: 'transactions#index'
+       get '/:id/invoice_items', to: 'invoice_items#index'
      end
      resources :invoices, only: [:index, :show]
 
