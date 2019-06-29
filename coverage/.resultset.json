@@ -1,9 +1,10 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/patrickduvall/turing/3module/projects/rails_engine/spec/requests/api/v1/merchants/items_spec.rb": [
+      "/Users/patrickduvall/turing/3module/projects/rails_engine/spec/requests/api/v1/merchants/invoices_spec.rb": [
         1,
         null,
+        1,
         1,
         1,
         1,
@@ -271,8 +272,8 @@
       "/Users/patrickduvall/turing/3module/projects/rails_engine/spec/factories/customers.rb": [
         1,
         1,
-        1,
-        1,
+        2,
+        2,
         null,
         null
       ],
@@ -289,7 +290,7 @@
       "/Users/patrickduvall/turing/3module/projects/rails_engine/spec/factories/invoices.rb": [
         1,
         1,
-        1,
+        4,
         1,
         1,
         null,
@@ -298,9 +299,9 @@
       "/Users/patrickduvall/turing/3module/projects/rails_engine/spec/factories/items.rb": [
         1,
         1,
-        4,
-        4,
-        4,
+        1,
+        1,
+        1,
         1,
         null,
         null
@@ -335,6 +336,7 @@
         null,
         1,
         null,
+        1,
         1,
         1,
         1,
@@ -431,7 +433,7 @@
         1,
         null
       ],
-      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/models/item.rb": [
+      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/models/customer.rb": [
         1,
         1,
         1,
@@ -444,35 +446,28 @@
         null,
         null,
         0,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        0,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        0,
-        null,
-        null,
-        null,
         null,
         null
       ],
-      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/controllers/api/v1/merchants/items_controller.rb": [
+      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/models/invoice.rb": [
         1,
         1,
         1,
         1,
+        1,
+        1,
+        null
+      ],
+      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/controllers/api/v1/invoices_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
         null,
         null
       ],
@@ -480,16 +475,13 @@
         1,
         null
       ],
-      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/serializers/item_serializer.rb": [
+      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/serializers/invoice_serializer.rb": [
         1,
         1,
         1,
-        1,
-        3,
-        null,
         null
       ]
     },
-    "timestamp": 1561817443
+    "timestamp": 1561818587
   }
 }
