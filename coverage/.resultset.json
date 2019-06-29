@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/patrickduvall/turing/3module/projects/rails_engine/spec/requests/api/v1/invoices/customers_spec.rb": [
+      "/Users/patrickduvall/turing/3module/projects/rails_engine/spec/requests/api/v1/invoices/merchant_spec.rb": [
         1,
         null,
         1,
@@ -355,6 +355,7 @@
         1,
         1,
         1,
+        1,
         null,
         1,
         null,
@@ -460,7 +461,7 @@
         1,
         null
       ],
-      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/controllers/api/v1/invoices/customer_controller.rb": [
+      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/controllers/api/v1/invoices/merchant_controller.rb": [
         1,
         1,
         1,
@@ -472,13 +473,15 @@
         1,
         null
       ],
-      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/serializers/customer_serializer.rb": [
+      "/Users/patrickduvall/turing/3module/projects/rails_engine/app/serializers/merchant_serializer.rb": [
         1,
         1,
         1,
+        null,
+        null,
         null
       ]
     },
-    "timestamp": 1561821562
+    "timestamp": 1561821760
   }
 }
