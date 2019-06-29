@@ -21,8 +21,8 @@ Rails.application.routes.draw do
        get '/:id/items', to: 'items#index'
        get '/:id/invoices', to: 'invoices#index'
      end
-     resources :merchants, only: [:index, :show]
-
+     resources :merchants, only: [:index, :show] do
+     end
      namespace :invoices do
        get '/find', to: 'search#show'
        get '/random', to: 'search#show'
