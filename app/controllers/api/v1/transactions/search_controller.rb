@@ -3,14 +3,13 @@ class Api::V1::Transactions::SearchController < ApplicationController
     if search_params && search_params != {}
       render json: TransactionSerializer.new(Transaction.find_by(search_params))
     else
-      random = Merchant.pluck(:id).sample
-      render json: MerchantSerializer.new(Merchant.find(random))
+      render json: MerchantSerializer.new(Merchant.random)
     end
   end
 
 
   def index
-    render json: TransactionSerializer.new(Transaction.where(search_params).order(:id))
+    render json: TransactionSerializer.new(Transaction.find_all(search_params))
   end
 
   private

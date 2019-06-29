@@ -1,16 +1,18 @@
 class Api::V1::Items::SearchController < ApplicationController
   def show
-    if search_params && search_params != {}
+    query = search_params.keys[0]
+    if search_params && query == ("created_at") || query == ("updated_at")
+      render json: ItemSerializer.new(Item.find_all(search_params).last)
+    elsif search_params && search_params != {}
       render json: ItemSerializer.new(Item.find_by(search_params))
     else
-      random = Item.pluck(:id).sample
-      render json: ItemSerializer.new(Item.find(random))
+      render json: ItemSerializer.new(Item.random)
     end
   end
 
 
   def index
-    render json: ItemSerializer.new(Item.where(search_params).order(:id))
+    render json: ItemSerializer.new(Item.find_all(search_params))
   end
 
   private

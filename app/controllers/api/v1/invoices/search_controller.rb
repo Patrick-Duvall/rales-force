@@ -3,14 +3,13 @@ class Api::V1::Invoices::SearchController < ApplicationController
     if search_params && search_params != {}
       render json: InvoiceSerializer.new(Invoice.find_by(search_params))
     else
-      random = Invoice.pluck(:id).sample
-      render json: InvoiceSerializer.new(Invoice.find(random))
+      render json: InvoiceSerializer.new(Invoice.random)
     end
   end
 
 
   def index
-    render json: InvoiceSerializer.new(Invoice.where(search_params).order(:id))
+    render json: InvoiceSerializer.new(Invoice.find_all(search_params))
   end
 
   private
