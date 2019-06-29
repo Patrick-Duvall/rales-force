@@ -38,4 +38,12 @@ class Merchant < ApplicationRecord
     .group('invoices.merchant_id')[0]
   end
 
+  def self.total_revenue(date)
+    Invoice.joins(:transactions, :invoice_items)
+    .select("SUM(invoice_items.quantity * invoice_items.unit_price) AS total_revenue")
+    .merge(Transaction.successful)
+    .where("CAST(invoices.updated_at AS DATE) = CAST('#{date}' AS DATE)")
+    .take
+  end
+
 end
