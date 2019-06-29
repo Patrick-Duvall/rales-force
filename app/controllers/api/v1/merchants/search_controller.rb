@@ -1,31 +1,22 @@
 class Api::V1::Merchants::SearchController < ApplicationController
   def show
-    if params['id']
-      render json: MerchantSerializer.new(Merchant.find(params['id']))
-    elsif params['name']
-      render json: MerchantSerializer.new(Merchant.find_by(name: params['name']))
-    elsif params['created_at']
-      render json: MerchantSerializer.new(Merchant.find_by(created_at: params['created_at']))
-    elsif params['updated_at']
-      render json: MerchantSerializer.new(Merchant.find_by(created_at: params['updated_at']))
+    if search_params && search_params != {}
+      render json: MerchantSerializer.new(Merchant.find_by(search_params))
     else
       random = Merchant.pluck(:id).sample
       render json: MerchantSerializer.new(Merchant.find(random))
     end
   end
 
+
   def index
-    if params['id']
-      render json: MerchantSerializer.new(Merchant.where(id: params[:id]))
-    end
-    if params['name']
-      render json: MerchantSerializer.new(Merchant.where(name: params[:name]))
-    end
-    if params['created_at']
-      render json: MerchantSerializer.new(Merchant.where(created_at: params[:created_at]))
-    end
-    if params['updated_at']
-      render json: MerchantSerializer.new(Merchant.where(updated_at: params[:updated_at]))
-    end
+    render json: MerchantSerializer.new(Merchant.find_all(search_params))
   end
+
+  private
+
+  def search_params
+    params.permit(:id, :created_at, :updated_at, :name)
+  end
+
 end

@@ -10,7 +10,7 @@ class Api::V1::Customers::SearchController < ApplicationController
 
 
   def index
-    render json: CustomerSerializer.new(Customer.where(search_params).order(:id))
+    render json: CustomerSerializer.new(Customer.find_all(search_params))
   end
 
   private
