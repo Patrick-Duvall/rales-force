@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-describe "Invoice API Transaction " do
-  it "sends a list of invoices transactions" do
+describe "Invoice API items " do
+  it "sends a list of invoices items" do
     m1 = create(:merchant)
     it1, it2, it3  = create_list(:item, 3, merchant_id: m1.id)
     c1 = create(:customer)
