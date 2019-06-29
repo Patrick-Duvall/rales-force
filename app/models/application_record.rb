@@ -8,4 +8,11 @@ class ApplicationRecord < ActiveRecord::Base
     def self.random
       self.pluck(:id).sample
     end
+
+    def self._not_exists(scope)
+      "NOT #{_exists(scope)}"
+    end
+  def self._exists(scope)
+    "EXISTS(#{scope.to_sql})"
+  end
 end
