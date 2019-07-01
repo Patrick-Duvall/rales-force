@@ -8,7 +8,7 @@ This project was built using:
 #### Rails Version:
 Rails 5.2.3
 
-####To Use
+#### To Use
 
 This project comes with corresponding csvs in the `app/data` folder. In order to create and populate your database locally 
 
@@ -29,34 +29,34 @@ All endpoints are returned as Standard JSON API using (Fast JSON API)[https://gi
 
 #### Record
 All resources in the CSVs have SHOW and INDEX funtionality and the ability to sort by every resource attribute. For example
-`GET /api/v1/merchants` returns all merchants
-`GET /api/v1/items/1` returns the item with an ID of 1
-`GET /api/v1/invoice_items/random` returns a random invoice item
-`GET /api/v1/merchants/find?name=Cummins-Theil` returns the first merchant with the name Cummins-Theil
-`GET /api/v1/customers/find_all?first_name=Peter` returns the all customers with a first name of Peter
+- `GET /api/v1/merchants` returns all merchants
+- `GET /api/v1/items/1` returns the item with an ID of 1
+- `GET /api/v1/invoice_items/random` returns a random invoice item
+- `GET /api/v1/merchants/find?name=Cummins-Theil` returns the first merchant with the name Cummins-Theil
+- `GET /api/v1/customers/find_all?first_name=Peter` returns the all customers with a first name of Peter
 
 #### Relationship
 In addition to record enpoints the following relationship endpoints are implemented . 
 ###### Merchants
-`GET /api/v1/merchants/:id/items` returns a collection of items associated with that merchant . 
-`GET /api/v1/merchants/:id/invoices` returns a collection of invoices associated with that merchant from their known orders . 
+- `GET /api/v1/merchants/:id/items` returns a collection of items associated with that merchant . 
+- `GET /api/v1/merchants/:id/invoices` returns a collection of invoices associated with that merchant from their known orders 
 ###### Invoices
-`GET /api/v1/invoices/:id/transactions` returns a collection of associated transactions . 
-`GET /api/v1/invoices/:id/invoice_items` returns a collection of associated invoice items . 
-`GET /api/v1/invoices/:id/items` returns a collection of associated items . 
-`GET /api/v1/invoices/:id/customer` returns the associated customer . 
-`GET /api/v1/invoices/:id/merchant` returns the associated merchant . 
+- `GET /api/v1/invoices/:id/transactions` returns a collection of associated transactions . 
+- `GET /api/v1/invoices/:id/invoice_items` returns a collection of associated invoice items . 
+- `GET /api/v1/invoices/:id/items` returns a collection of associated items . 
+- `GET /api/v1/invoices/:id/customer` returns the associated customer . 
+- `GET /api/v1/invoices/:id/merchant` returns the associated merchant . 
 ###### Invoice Items
-`GET /api/v1/invoice_items/:id/invoice` returns the associated invoice . 
-`GET /api/v1/invoice_items/:id/item` returns the associated item . 
+- `GET /api/v1/invoice_items/:id/invoice` returns the associated invoice . 
+- `GET /api/v1/invoice_items/:id/item` returns the associated item . 
 ###### Items
-`GET /api/v1/items/:id/invoice_items` returns a collection of associated invoice items . 
-`GET /api/v1/items/:id/merchant` returns the associated merchant . 
+- `GET /api/v1/items/:id/invoice_items` returns a collection of associated invoice items . 
+- `GET /api/v1/items/:id/merchant` returns the associated merchant . 
 ###### Transactions
-`GET /api/v1/transactions/:id/invoice` returns the associated invoice .   
+- `GET /api/v1/transactions/:id/invoice` returns the associated invoice .   
 ###### Customers
-`GET /api/v1/customers/:id/invoices` returns a collection of associated invoices . 
-`GET /api/v1/customers/:id/transactions` returns a collection of associated transactions . 
+- `GET /api/v1/customers/:id/invoices` returns a collection of associated invoices . 
+- `GET /api/v1/customers/:id/transactions` returns a collection of associated transactions . 
 
 #### Business intelligence
 These Endpoints also exist to provide relevant business intelligence logic.
