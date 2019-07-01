@@ -107,7 +107,7 @@ describe "Transactions search API" do
     expect(invoice['data'][1]['id']).to eq('3')
   end
 
-  it "can provide a random entry" do
+  xit "can provide a random entry" do
     invoices = create_list(:invoice, 5, customer_id: @c1.id, merchant_id: @m1.id) << @i1
     get "/api/v1/invoices/random"
     invoice = JSON.parse(response.body)
