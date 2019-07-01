@@ -339,6 +339,7 @@
         1,
         1,
         1,
+        1,
         null,
         1,
         null,
@@ -396,6 +397,11 @@
         1,
         null,
         1,
+        0,
+        null,
+        null,
+        null,
+        1,
         null,
         null,
         null,
@@ -415,6 +421,16 @@
         null,
         1,
         1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
         null,
         null
       ],
@@ -450,6 +466,11 @@
         1,
         1,
         1,
+        null,
+        1,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/patrickduvall/turing/3module/projects/rails_engine/spec/models/item_spec.rb": [
@@ -558,6 +579,10 @@
         null,
         null,
         1,
+        0,
+        null,
+        null,
+        1,
         null,
         null,
         null,
@@ -588,7 +613,6 @@
         null,
         null,
         0,
-        null,
         null,
         null
       ],
@@ -2105,13 +2129,6 @@
         26,
         26,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null
       ],
       "/Users/patrickduvall/turing/3module/projects/rails_engine/app/controllers/api/v1/items_controller.rb": [
@@ -2234,6 +2251,6 @@
         null
       ]
     },
-    "timestamp": 1561837935
+    "timestamp": 1561986711
   }
 }

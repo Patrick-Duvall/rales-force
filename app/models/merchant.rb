@@ -20,7 +20,6 @@ class Merchant < ApplicationRecord
     .order(sold: :desc)
     .limit(limit)
   end
-
   def customers_with_pending_invoices
     customers.merge(Invoice.without_successful_transaction)
   end
@@ -57,5 +56,4 @@ class Merchant < ApplicationRecord
     .where("CAST(invoices.updated_at AS DATE) = CAST('#{date}' AS DATE)")
     .take
   end
-
 end
